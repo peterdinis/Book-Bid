@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ukKyRGZ/ZAbs00/l7UuYc1VVjaenheO8gy7r90ny8AAbh0eShTsv9Zp1uUVlWFTNgBSN/ZQFM+LndUD5BtOSlQ==",
+  "dgSpecHash": "ozqqS4p+6Ly5nG9X3QqbW27cLBtFzqD3g7ZlkShBbmQHhG9d1vCgN0WR2XGfXttZXGMS7+jE8RNTWwVc9E8RLA==",
   "success": true,
   "projectFilePath": "/home/peterdinis/Desktop/Work/book-bid/AuctionService/AuctionService.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,9 @@
     "/home/peterdinis/.nuget/packages/microsoft.identitymodel.tokens/8.0.1/microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
+    "/home/peterdinis/.nuget/packages/polly/8.6.3/polly.8.6.3.nupkg.sha512",
+    "/home/peterdinis/.nuget/packages/polly.core/8.6.3/polly.core.8.6.3.nupkg.sha512",
+    "/home/peterdinis/.nuget/packages/polly.extensions.http/3.0.0/polly.extensions.http.3.0.0.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.10/sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/sqlitepclraw.core/2.1.10/sqlitepclraw.core.2.1.10.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.10/sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",

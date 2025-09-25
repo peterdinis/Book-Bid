@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "M6SMOqy6bND+iW2SSmH1Aomt4DC5oRDEYt6H6/V79Jq+JsUYcvRLeQW2atYD3U2h9SJnRBDl21Rr/hZyeZlRcA==",
+  "dgSpecHash": "wyoQXqeoQ4pkN7gHLaiGc/95F/cptV3j4jaoT0LrQpcz33ozB97p5KXKdN4h5vYgOCGuyRXNAFQyPp/toS+TJA==",
   "success": true,
   "projectFilePath": "/home/peterdinis/Desktop/Work/book-bid/SearchService/SearchService.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,9 @@
     "/home/peterdinis/.nuget/packages/mongodb.bson/3.4.3/mongodb.bson.3.4.3.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/mongodb.driver/3.4.3/mongodb.driver.3.4.3.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/mongodb.entities/24.2.0-beta.1/mongodb.entities.24.2.0-beta.1.nupkg.sha512",
+    "/home/peterdinis/.nuget/packages/polly/8.6.3/polly.8.6.3.nupkg.sha512",
+    "/home/peterdinis/.nuget/packages/polly.core/8.6.3/polly.core.8.6.3.nupkg.sha512",
+    "/home/peterdinis/.nuget/packages/polly.extensions.http/3.0.0/polly.extensions.http.3.0.0.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/sharpcompress/0.30.1/sharpcompress.0.30.1.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/snappier/1.0.0/snappier.1.0.0.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
