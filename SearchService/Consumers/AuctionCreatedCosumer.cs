@@ -1,12 +1,23 @@
+
+using System;
+using AutoMapper;
 using Contracts;
 using MassTransit;
+using MongoDB.Entities;
+using SearchService.Models;
 
 namespace SearchService.Consumers;
 
-public class AuctionCreatedConsumer : IConsumer<AuctionCreated>
+public class AuctionCreatedConsumer(IMapper mapper) : IConsumer<AuctionCreated>
 {
-    public Task Consume(ConsumeContext<AuctionCreated> context)
+    public async Task Consume(ConsumeContext<AuctionCreated> context)
     {
-        throw new NotImplementedException();
+        Console.WriteLine($"AuctionCreatedConsumer: {context.Message.Id}");
+
+        var item = mapper.Map<Item>(context.Message);
+
+        if (item.Model == "Foo") throw new ArgumentException("Model cannot be Foo");
+
+        await item.SaveAsync();
     }
 }
