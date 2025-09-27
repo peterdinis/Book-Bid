@@ -13,6 +13,13 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 builder.Services.AddMassTransit(x=>
 {
+    x.AddEntityFrameworkOutbox<AppDataContext>(o =>
+    {
+        o.QueryDelay = TimeSpan.FromSeconds(10);
+        o.UseSqlite();
+        o.UseBusOutbox();
+    });
+
     x.UsingRabbitMq((context, ctg) =>
     {
         ctg.ConfigureEndpoints(context);

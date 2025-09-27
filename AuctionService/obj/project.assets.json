@@ -80,6 +80,24 @@
           }
         }
       },
+      "MassTransit.EntityFrameworkCore/8.5.4-develop.2373": {
+        "type": "package",
+        "dependencies": {
+          "MassTransit": "8.5.4-develop.2373",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.1",
+          "Microsoft.Extensions.Caching.Memory": "9.0.1"
+        },
+        "compile": {
+          "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MassTransit.RabbitMQ/8.5.3": {
         "type": "package",
         "dependencies": {
@@ -1653,6 +1671,23 @@
         "lib/netstandard2.0/MassTransit.Abstractions.xml",
         "masstransit.abstractions.8.5.3.nupkg.sha512",
         "masstransit.abstractions.nuspec",
+        "mt-logo-small.png"
+      ]
+    },
+    "MassTransit.EntityFrameworkCore/8.5.4-develop.2373": {
+      "sha512": "1cL+nr7UHE1cAEOHYCyS/l3yW2P2LLSpguTnLQl9rP9sShVUvk35+roO0jGgqC55yQl3OvR+gQ52MglHVWlEGA==",
+      "type": "package",
+      "path": "masstransit.entityframeworkcore/8.5.4-develop.2373",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.README.md",
+        "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.dll",
+        "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.xml",
+        "lib/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll",
+        "lib/net9.0/MassTransit.EntityFrameworkCoreIntegration.xml",
+        "masstransit.entityframeworkcore.8.5.4-develop.2373.nupkg.sha512",
+        "masstransit.entityframeworkcore.nuspec",
         "mt-logo-small.png"
       ]
     },
@@ -4417,6 +4452,7 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Contracts >= 1.0.0",
       "MassTransit >= 8.5.3",
+      "MassTransit.EntityFrameworkCore >= 8.5.4-develop.2373",
       "MassTransit.RabbitMQ >= 8.5.3",
       "Microsoft.AspNetCore.OpenApi >= 8.0.19",
       "Microsoft.EntityFrameworkCore >= 9.0.9",
@@ -4479,6 +4515,10 @@
           "MassTransit": {
             "target": "Package",
             "version": "[8.5.3, )"
+          },
+          "MassTransit.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[8.5.4-develop.2373, )"
           },
           "MassTransit.RabbitMQ": {
             "target": "Package",
@@ -4545,6 +4585,15 @@
       "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requires AutoMapper (= 12.0.1) but version AutoMapper 15.0.1 was resolved.",
       "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: MassTransit from 8.5.4-develop.2373 to 8.5.3. Reference the package directly from the project to select a different version. \n AuctionService -> MassTransit.EntityFrameworkCore 8.5.4-develop.2373 -> MassTransit (>= 8.5.4-develop.2373) \n AuctionService -> MassTransit (>= 8.5.3)",
+      "libraryId": "MassTransit",
       "targetGraphs": [
         "net8.0"
       ]

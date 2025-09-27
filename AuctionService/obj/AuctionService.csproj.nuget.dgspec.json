@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[8.5.3, )"
             },
+            "MassTransit.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.5.4-develop.2373, )"
+            },
             "MassTransit.RabbitMQ": {
               "target": "Package",
               "version": "[8.5.3, )"
