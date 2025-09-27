@@ -158,3 +158,15 @@
 /home/peterdinis/Desktop/Work/book-bid/AuctionService/obj/Debug/net8.0/AuctionService.pdb
 /home/peterdinis/Desktop/Work/book-bid/AuctionService/obj/Debug/net8.0/AuctionService.genruntimeconfig.cache
 /home/peterdinis/Desktop/Work/book-bid/AuctionService/obj/Debug/net8.0/ref/AuctionService.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/AutoMapper.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/MassTransit.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/MassTransit.Abstractions.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/MassTransit.EntityFrameworkCoreIntegration.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/MassTransit.RabbitMqTransport.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/Polly.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/Polly.Core.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/Polly.Extensions.Http.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/RabbitMQ.Client.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/Contracts.dll
+/home/peterdinis/Desktop/Work/book-bid/AuctionService/bin/Debug/net8.0/Contracts.pdb

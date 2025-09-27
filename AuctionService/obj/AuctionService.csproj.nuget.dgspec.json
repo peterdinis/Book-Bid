@@ -44,7 +44,7 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[15.0.1, )"
+              "version": "[12.0.1, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -52,15 +52,15 @@
             },
             "MassTransit": {
               "target": "Package",
-              "version": "[8.5.3, )"
+              "version": "[8.3.0, )"
             },
             "MassTransit.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.5.4-develop.2373, )"
+              "version": "[8.3.0, )"
             },
             "MassTransit.RabbitMQ": {
               "target": "Package",
-              "version": "[8.5.3, )"
+              "version": "[8.3.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",

@@ -111,7 +111,8 @@ public class AuctionsController(AppDataContext context, IMapper mapper,
         // TODO: check seller is the same as current user
         context.Auctions.Remove(auction);
 
-        await publishEndpoint.Publish<AuctionDeleted>(new {Id = auction.Id.ToString()});
+        // TODO: Fix this later
+        //await publishEndpoint.Publish<AuctionDeleted>(new {Id = auction.Id.ToString()});
 
         var result = await context.SaveChangesAsync() > 0;
 

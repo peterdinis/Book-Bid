@@ -96,6 +96,83 @@ namespace AuctionService.Migrations
                     b.ToTable("Items");
                 });
 
+            modelBuilder.Entity("MassTransit.EntityFrameworkCoreIntegration.InboxState", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("Consumed")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("ConsumerId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("Delivered")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("ExpirationTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<long?>("LastSequenceNumber")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<Guid>("LockId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("MessageId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ReceiveCount")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("Received")
+                        .HasColumnType("TEXT");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("BLOB");
+
+                    b.HasKey("Id");
+
+                    b.HasAlternateKey("MessageId", "ConsumerId");
+
+                    b.HasIndex("Delivered");
+
+                    b.ToTable("InboxState");
+                });
+
+            modelBuilder.Entity("MassTransit.EntityFrameworkCoreIntegration.OutboxState", b =>
+                {
+                    b.Property<Guid>("OutboxId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("Delivered")
+                        .HasColumnType("TEXT");
+
+                    b.Property<long?>("LastSequenceNumber")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<Guid>("LockId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("BLOB");
+
+                    b.HasKey("OutboxId");
+
+                    b.HasIndex("Created");
+
+                    b.ToTable("OutboxState");
+                });
+
             modelBuilder.Entity("AuctionService.Entities.Item", b =>
                 {
                     b.HasOne("AuctionService.Entities.Auction", "Auction")
