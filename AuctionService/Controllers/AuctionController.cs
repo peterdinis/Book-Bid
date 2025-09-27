@@ -12,7 +12,7 @@ namespace AuctionService.Controllers;
 [Route("api/[controller]")]
 public class AuctionsController(AppDataContext context, IMapper mapper) : ControllerBase
 {
-     [HttpGet]
+    [HttpGet]
     public async Task<ActionResult<List<AuctionDto>>> GetAuctions(string? date)
     {
         var query = context.Auctions.OrderBy(x => x.Item.Make).AsQueryable();
@@ -87,7 +87,7 @@ public class AuctionsController(AppDataContext context, IMapper mapper) : Contro
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult> DeleteAuction(Guid id) 
+    public async Task<ActionResult> DeleteAuction(Guid id)
     {
         var auction = await context.Auctions.FindAsync(id);
         if (auction == null)
@@ -95,7 +95,7 @@ public class AuctionsController(AppDataContext context, IMapper mapper) : Contro
             return NotFound();
         }
 
-         // TODO: check seller is the same as current user
+        // TODO: check seller is the same as current user
         context.Auctions.Remove(auction);
         var result = await context.SaveChangesAsync() > 0;
         if (!result)
@@ -103,5 +103,5 @@ public class AuctionsController(AppDataContext context, IMapper mapper) : Contro
             return BadRequest("Failed to delete auction");
         }
         return Ok();
-    } 
+    }
 }
