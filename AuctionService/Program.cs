@@ -1,3 +1,4 @@
+using AuctionService.Consumers;
 using AuctionService.Context;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +20,8 @@ builder.Services.AddMassTransit(x=>
         o.UseSqlite();
         o.UseBusOutbox();
     });
+    
+    x.AddConsumersFromNamespaceContaining<AuctionCreatedFaultConsumer>();
 
     x.UsingRabbitMq((context, ctg) =>
     {
