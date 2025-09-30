@@ -8,6 +8,7 @@ using Contracts;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AuctionService.Controllers;
 
@@ -46,13 +47,12 @@ public class AuctionsController(AppDataContext context, IMapper mapper,
         return mapper.Map<AuctionDto>(auction);
     }
 
-    [HttpPost]
+    [Authorize]
     public async Task<ActionResult<AuctionDto>> CreateAuction([FromBody] CreateAuctionDto auctionDto)
     {
         var auction = mapper.Map<Auction>(auctionDto);
 
-        // TODO: add current user as seller
-        auction.Seller = "test";
+        auction.Seller = User.Identity?.Name ?? throw new InvalidOperationException("User not found");
 
         context.Auctions.Add(auction);
 
@@ -79,7 +79,7 @@ public class AuctionsController(AppDataContext context, IMapper mapper,
             return NotFound();
         }
 
-        // TODO: check seller is the same as current user
+        if (auction.Seller != User.Identity?.Name) return Forbid();
 
         auction.Item.Make = auctionDto.Make ?? auction.Item.Make;
         auction.Item.Model = auctionDto.Model ?? auction.Item.Model;
@@ -99,6 +99,7 @@ public class AuctionsController(AppDataContext context, IMapper mapper,
         return Ok(mapper.Map<AuctionDto>(auction));
     }
 
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<ActionResult> DeleteAuction(Guid id)
     {
@@ -108,8 +109,7 @@ public class AuctionsController(AppDataContext context, IMapper mapper,
             return NotFound();
         }
 
-        // TODO: check seller is the same as current user
-        context.Auctions.Remove(auction);
+        if (auction.Seller != User.Identity?.Name) return Forbid();
 
         await publishEndpoint.Publish<AuctionDeleted>(new {Id = auction.Id.ToString()});
 
