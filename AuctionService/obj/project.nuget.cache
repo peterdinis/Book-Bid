@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qcJfOKEJ8wl/dvcdNujrkt18zkHza8qWNeojnrSNRYODze8aElo6nusKKUOLZHG1YxrAE/lQHU8UvxX1JrpYmw==",
+  "dgSpecHash": "Txs7GbiBr1wh0DWdvCMnpEkw+z4SmavYhwG6gpVnGSXk3s7zE4N4/D06c9Ou1/2AaSZZ4kyTQox6oTOaXAWOZg==",
   "success": true,
   "projectFilePath": "/home/peterdinis/Desktop/Work/book-bid/AuctionService/AuctionService.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,9 @@
     "/home/peterdinis/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.9/microsoft.extensions.logging.abstractions.9.0.9.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/microsoft.extensions.options/9.0.9/microsoft.extensions.options.9.0.9.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/microsoft.extensions.primitives/9.0.9/microsoft.extensions.primitives.9.0.9.nupkg.sha512",
+    "/home/peterdinis/.nuget/packages/microsoft.identitymodel.abstractions/8.14.0/microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
+    "/home/peterdinis/.nuget/packages/microsoft.identitymodel.logging/8.14.0/microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
+    "/home/peterdinis/.nuget/packages/microsoft.identitymodel.tokens/8.14.0/microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
     "/home/peterdinis/.nuget/packages/polly/8.6.3/polly.8.6.3.nupkg.sha512",
