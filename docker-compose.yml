@@ -1,18 +1,23 @@
+version: "3.9"
+
 services:
   mongodb:
+    container_name: book-bid_mongodb_1
     image: mongo:latest
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=mongopw
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: mongopw
     ports:
-      - "27018:27017"
+      - "27019:27017"   # host port 27019 → container port 27017
     volumes:
       - mongodata:/data/db
 
   rabbitmq:
-    image: "rabbitmq:3-management-alpine"
+    container_name: book-bid_rabbitmq_1
+    image: rabbitmq:3-management-alpine
     ports:
-       - "5672:5672"
-       - "15672:15672"
+       - "5673:5672"     # host port 5673 → container port 5672
+       - "15673:15672"   # host port 15673 → container port 15672
+
 volumes:
   mongodata:

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Txs7GbiBr1wh0DWdvCMnpEkw+z4SmavYhwG6gpVnGSXk3s7zE4N4/D06c9Ou1/2AaSZZ4kyTQox6oTOaXAWOZg==",
+  "dgSpecHash": "BE6tFVxInPUmyRbHVDkYHB/yq4h3eRLEuYn+dJeQgayK3rdaIQjZomqyR2x42mnj23fdMCQFlBxbdd+eGZmryw==",
   "success": true,
   "projectFilePath": "/home/peterdinis/Desktop/Work/book-bid/AuctionService/AuctionService.csproj",
   "expectedPackageFiles": [
