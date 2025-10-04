@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "Microsoft.AspNetCore.OpenApi/8.0.19": {
+      "Microsoft.AspNetCore.OpenApi/8.0.20": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
@@ -111,10 +111,10 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.OpenApi/8.0.19": {
-      "sha512": "W3R++XjVxo/hFldbg0IGAFeTA28M3Vagml4/GIIYC/5wYKrO4fdVM2+y/V6Bu6GEHe6OL8E6gcBqPod1OjkoeQ==",
+    "Microsoft.AspNetCore.OpenApi/8.0.20": {
+      "sha512": "IjWB1Q/Ar8fyfE3cKjybSlpAE++miAkDGbSup0WeFOtZn2vK+myK7RWDJlFdWICLLU50CmmLad91toIJNTrymQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/8.0.19",
+      "path": "microsoft.aspnetcore.openapi/8.0.20",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -122,7 +122,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net8.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.8.0.19.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.8.0.20.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -477,7 +477,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Microsoft.AspNetCore.OpenApi >= 8.0.19",
+      "Microsoft.AspNetCore.OpenApi >= 8.0.20",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/peterdinis/Desktop/Work/book-bid/GatewayService/GatewayService.csproj",
-      "projectName": "GatewayService",
-      "projectPath": "/home/peterdinis/Desktop/Work/book-bid/GatewayService/GatewayService.csproj",
+      "projectUniqueName": "/home/peterdinis/Desktop/Work/book-bid/IdentityService/IdentityService.csproj",
+      "projectName": "IdentityService",
+      "projectPath": "/home/peterdinis/Desktop/Work/book-bid/IdentityService/IdentityService.csproj",
       "packagesPath": "/home/peterdinis/.nuget/packages/",
-      "outputPath": "/home/peterdinis/Desktop/Work/book-bid/GatewayService/obj/",
+      "outputPath": "/home/peterdinis/Desktop/Work/book-bid/IdentityService/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/peterdinis/.nuget/NuGet/NuGet.Config"
@@ -520,7 +520,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[8.0.19, )"
+            "version": "[8.0.20, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
